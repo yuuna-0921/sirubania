@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>テスト</title>
+    <style>
+        .box-a,
+        .box-b,
+        .box-c {
+            width: 160px;
+            height: 160px;
+            background-color: #00A361;
+            font-size: 36px;
+            color: #fff;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+        .box-a{
+
+            background-color: #00A361;
+            margin-left: 100px;
+            position: relative;
+        }
+        .box-b{
+            background-color: #FFAC24;
+            position: relative; /*相対配置 */
+            top: 50px;
+            left: 50px;
+        }
+        .box-c{
+            background-color: #69A2FF;
+            /* position: absolute; /*絶対配置 body要素の左上が起点となる*
+            top: 50px;
+            left: 50px; */
+        }
+        .box-d {
+            width: 30px;
+            height: 30px;
+            background-color: black;
+            color: #fff;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="box-a">
+        <div class="box-d">
+            
+        </div>
+    </div>
+    <div class="box-b">
+        B
+    </div>
+    <div class="box-c">
+        C
+    </div>
+</body>
+</html>
